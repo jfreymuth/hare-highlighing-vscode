@@ -13,6 +13,13 @@
     "engines": {
         "vscode": "^1.66.0"
     },
+    "activationEvents": [
+        "onLanguage:hare"
+    ],
+    "main": "./extension.js",
+    "dependencies": {
+        "vscode-languageclient": "^8.0.2"
+    },
     "categories": [
         "Programming Languages"
     ],
@@ -48,6 +55,16 @@
             "[hare]": {
                 "editor.insertSpaces": false,
                 "editor.tabSize": 8
+            }
+        },
+        "configuration": {
+            "title": "Hare",
+            "properties": {
+                "hare.languageServer": {
+                    "type": "string",
+                    "default": "hare-ls",
+                    "description": "Command to run the Hare language server"
+                }
             }
         }
     }
