@@ -1,3 +1,16 @@
+
+**!! experimental language server branch !!**
+
+this is an experimental fork of the extension to add basic language server support.
+
+To test this:
+1. Download this fork and place it in the VSCode extension folder (depends on your VSCode distribution, for me it is `~/.vscode-oss/extensions`)
+1. Download and build the language server from [https://git.sr.ht/~jfreymuth/hare-ls](https://git.sr.ht/~jfreymuth/hare-ls) (a Go installation is required for this)
+1. In the VSCode settings, point "Hare: Language Server" at the executable
+1. Install Hare or download the source ([https://git.sr.ht/~sircmpwn/hare](https://git.sr.ht/~sircmpwn/hare)) and point the `HAREPATH` environment variable at the source
+
+Please report bugs to the hare-ls mailing list: [https://lists.sr.ht/~jfreymuth/hare-ls](https://lists.sr.ht/~jfreymuth/hare-ls)
+
 # vscode-hare-highlighting
 
 This extension provides syntax highlighting for the [Hare](https://harelang.org/) language in VSCode.
